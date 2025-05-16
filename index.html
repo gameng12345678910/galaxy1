@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy</title>
+    <link rel="stylesheet" href="stylehome.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="bg"></div>
+
+      <div class="nav">
+        <span class="galaxy">GALAXY</span> 
+        <span class="navtext">HOME PLANETS SERVICES ABOUT CONTACT</span >
+        <div class="logo"></div>
+        <div class="search"></div>
+      </div>
+
+      <div class="radar" id="ra"> <div class="radarrot"> <div class="radarro"> </div></div></div>
+      
+      <div class="desc">
+        <span class="title">GALAXY TRAVEL</span>
+        <span class="desctext">A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems, all held together by gravity and space is a boundless three dimensional extent in which objects and events have relative position.</span>
+        <div class="button"><a class="start" href="mercury.html">GET STARTED</a></div>
+      </div>
+
+      <div class="shuttle"></div>
+      <div class="astronaut" id="as"></div>
+      <div class="sun"></div>
+    </div>
+
+    <script>
+      m=1;
+      setInterval(move, 1000);
+
+      function move(){
+        updown = document.getElementById("as");
+        rot = document.getElementById("ra");
+        if (m == "1"){
+          updown.style.top = "400px";
+          m++;
+        }else{
+          updown.style.top = "289px";
+          m--; 
+        }
+      }
+    </script>
+  </body>
+</html>

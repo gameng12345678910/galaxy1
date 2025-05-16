@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy</title>
+    <link rel="stylesheet" href="planetstyle.css" />
+    <style>
+      .planet {
+        display: block;
+        position: relative;
+        height: 96px;
+        margin: 17px 0 0 0;
+        font-size: 64px;
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+        background: linear-gradient(180deg, #3F659D, #6FB1F1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 30;
+      }
+
+      .sun {
+        position: absolute;
+        width: 1440px;
+        height: 496px;
+        top: 528px;
+        left: 0;
+        background: url(Galaxy/uranus.png)
+          no-repeat center;
+        background-size: cover;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="bg"></div>
+
+      <div class="nav">
+        <span class="galaxy">GALAXY</span> 
+        <span class="navtext">HOME PLANETS SERVICES ABOUT CONTACT</span >
+        <div class="logo"></div>
+        <div class="search"></div>
+      </div>
+      
+      <div class="radar"></div>
+
+      <div class="side">
+        <a class="list" href="index.html">Intro</a>
+        <div class="line"></div>
+
+        <a class="list" href="mercury.html">Mercury</a>
+        <div class="line"></div>
+
+        <a class="list" href="venus.html">Venus</a>
+        <div class="line"></div>
+          
+        <a class="list" href="earth.html">Earth</a>
+        <div class="line"></div>
+
+        <a class="list" href="mars.html">Mars</a>
+        <div class="line"></div>
+          
+        <a class="list" href="jupiter.html">Jupiter</a>
+        <div class="line"></div>
+
+        <a class="list" href="saturn.html">Saturn</a>
+        <div class="line"></div>
+          
+        <a class="list" href="uranus.html">Uranus</a>
+        <div class="line"></div>
+
+        <a class="list" href="neptune.html">Neptune</a>
+        <div class="line"></div>
+      </div>
+
+      <div class="desc">
+        <span class="planet">URANUS PLANET</span>
+        <div class="desctext">
+          <span class="text">Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn).</span>
+          <div class="button"><div class="map-pin"></div></div>
+          <span class="planetname">Uranus/Earth</span
+          ><span class="location">2.9378 billion km</span>
+        </div>
+      </div>
+
+      <div class="astronaut"></div>
+      <div class="sun"></div>
+    </div>
+  </body>
+</html>
